@@ -1,0 +1,7 @@
+﻿<tabset>
+    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled" id="{{tab.title}}">
+        <div class="col-sm-12" ng-include src="tab.url"></div>
+        <div class="clearfix"></div>
+    </tab>
+</tabset>
+<div ng-include src="'App/Views/Shared/_PageButtons.html'"></div>
