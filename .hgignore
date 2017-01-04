@@ -1,0 +1,10 @@
+syntax: glob
+Package1.Core/bin
+Package1.Core/obj/
+Package1.UnitTests/bin
+Package1.UnitTests/obj
+Package1.Web/bin
+packages
+Package1.Web/obj/
+Package1/bin
+Package1/obj
