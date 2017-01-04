@@ -1,0 +1,23 @@
+﻿@**@<!DOCTYPE html>
+<html ng-app="Package.View">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    @Styles.Render("~/bundles/site")
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<!-- define angular controller -->
+<body>
+    @Html.Partial("_Header")
+    @Html.Partial("_Body")
+    @Html.Partial("_Footer")
+    <script type="text/javascript">
+    webApiUrl = '@ViewBag.WebApiUrl';
+    </script>
+    @Scripts.Render("~/bundles/framework")
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/services")
+    @Scripts.Render("~/bundles/controllers")
+    <toaster-container toaster-options="{'position-class': 'toast-top-full-width'}"></toaster-container>
+</body>
+</html>
